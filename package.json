@@ -32,10 +32,13 @@
     "test": "(test \"$VAGRANT\" = \"true\" || test \"$TRAVIS\" = \"true\" || (echo \"Tests must be run in enclosed environment (e.g. Vagrant, Travis) to prevent accidental publishes\n\" 1>&2 && exit 1)) && mocha --recursive"
   },
   "dependencies": {
+    "deep-extend": "^0.4.1",
     "foundry-release-base": "~1.0.1",
+    "nconf": "^0.8.4",
     "semver": "~4.1.0",
     "shell-quote": "~1.4.1",
-    "shelljs": "~0.2.6"
+    "shelljs": "~0.2.6",
+    "template-string": "^1.1.2"
   },
   "devDependencies": {
     "chai": "~1.9.0",
